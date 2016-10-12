@@ -1,4 +1,4 @@
-package com.example.android.sunshine.app;
+package com.example.abdel.sunshine;
 
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -14,9 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import com.example.abdel.sunshine.BuildConfig;
-import com.example.abdel.sunshine.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -98,7 +95,7 @@ public class ForecastFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         // Get a reference to the ListView, and attach this adapter to it.
-        ListView listView = (ListView) rootView.findViewById(R.id.list_item_forecast);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_item_forecast_TextView);
         listView.setAdapter(mForecastAdapter);
 
         return rootView;
